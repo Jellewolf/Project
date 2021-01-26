@@ -1,5 +1,6 @@
 # Project
 Website/Applicatie
 
-test
-hey
+Planning,
+
+week 1 = php, sorteren, items toevoegen en databases inlezen.
