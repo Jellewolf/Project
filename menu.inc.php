@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>menu</title>
+  <title>menuandlogo</title>
      <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
