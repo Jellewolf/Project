@@ -1,6 +1,3 @@
 # Project
-Website/Applicatie
+Pharmacy Website
 
-Planning,
-
-week 1 = php, sorteren, items toevoegen en databases inlezen.

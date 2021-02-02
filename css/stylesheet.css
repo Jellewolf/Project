@@ -1,4 +1,5 @@
-	ul {
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -21,6 +22,4 @@ li a {
 li a:hover {
   background-color: #111111;
 }
-h1 {
-	text-align: center;
-}
+
