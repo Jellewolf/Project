@@ -13,7 +13,6 @@
 				<li><a href="voorlichting.php">voorlichting</a></li>
 				<li><a href="login.php">Login</a></li>
    	 		</ul>
-   	 					<p>test</p>
     		<!--This is a menu include not a stand alone file just a file for the main menu/logo-->
 </body>
 </html>
