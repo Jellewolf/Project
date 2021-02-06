@@ -34,7 +34,7 @@ h1 {
   border-color: #333333;
 }
 .herhaalservice {
-  display: block;
+  display: block; 
   float: left;
   border: solid 3px black;
   padding:10px;
