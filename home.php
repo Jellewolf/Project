@@ -14,10 +14,9 @@ include 'inc/menu.inc.php';
 <p class="herhaalservice">Herhaal Service</p>
 <p class="herhaalservice">Medicijnenoverzicht</p>
 <p class="herhaalservice">Inschrijven</p>
-<div>
 <?php
 include 'inc/news.inc.php';
 ?>
-</div>
 </body>
 </html>
+
