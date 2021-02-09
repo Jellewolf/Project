@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Voorlichting</title>
+<title>Medicijnenoverzicht</title>
 </head>
 <body>
 	<?php
