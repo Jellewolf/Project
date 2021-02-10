@@ -10,6 +10,7 @@ $message = $_POST['message'];
 $sql = "INSERT INTO contactform (Firstname, Lastname, Phonenumber, Email, contmessage) 
 VALUES ('$first', '$last', '$phone', '$email', '$message');";
 mysqli_query($conn, $sql);
+
 /*This checks if the contactform was succesfully send out (check browser bar)*/
 header("location: ../service.php?bericht=verstuurd");
 

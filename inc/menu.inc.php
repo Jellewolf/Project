@@ -5,7 +5,7 @@
      <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-	<img src="images/logo-placeholder.png" alt="placeholder" width="500" height="200">
+	<img src="images/logo_pharmacy.png" alt="logo" style="width:200px;height: 200px;">
 			<h1>Menu</h1>
 				<ul>
 					<li><a href="home.php">Home</a></li>
@@ -14,6 +14,5 @@
 					<li><a href="login.php">Login</a></li>
    	 			</ul>
     			<!--This is a menu include not a stand alone file just a file for the main menu/logo-->
-</div>
 </body>
 </html>

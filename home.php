@@ -19,6 +19,7 @@ include 'inc/menu.inc.php';
 	<br>
 	<br>
 	<br>
+
 		<p>openingstijden</p>
 		<p>adres</p>
 <?php

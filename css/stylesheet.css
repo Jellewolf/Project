@@ -22,10 +22,6 @@ li a {
 li a:hover {
   background-color: #111111;
 }
-img {
-  width: 500px;
-  height: 200px;
-}
 h1 {
   font-weight: normal;
   margin: 0;
@@ -56,3 +52,4 @@ a {
   margin-right:30px;
   text-decoration: none;   
 }
+
