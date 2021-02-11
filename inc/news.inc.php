@@ -8,8 +8,10 @@ include_once 'dbh.inc.php';
 
 if ($resultcheck > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
-        echo $row['NewsArticle'] . "<div class='news'><img src='/images/".$row['NewsImages']."'></div> <br />";
+        echo "<div class='news'><img src='/images/".$row['NewsImages']."'>"."<br />" . $row['NewsArticle']."</div>";
         
     }
 }
+//echo $row['NewsArticle'] . "<div class='news'><img src='/images/".$row['NewsImages']."'></div>";
+
 ?>
