@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>Voorlichting</title>
+<?php
+include 'inc/stylesheet.inc.php';
+?>
 </head>
 <body>
 	<?php

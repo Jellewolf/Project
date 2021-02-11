@@ -2,7 +2,9 @@
 <html>
 <head>
 <title>Home</title>
-	    <link rel="stylesheet" href="css/stylesheet.css">
+<?php
+include 'inc/stylesheet.inc.php';
+?>
 </head>
 <body>
 <?php
