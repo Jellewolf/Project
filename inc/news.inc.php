@@ -5,9 +5,11 @@ include_once 'dbh.inc.php';
  $result = mysqli_query($conn, $sql);
  $resultcheck = mysqli_num_rows($result);
 
+
 if ($resultcheck > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
-        echo $row['NewsArticle'] . "<br />";
+        echo $row['NewsArticle'] . "<img src='/images/".$row['NewsImages']."'> <br />";
+        
     }
 }
 ?>
