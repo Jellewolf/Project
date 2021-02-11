@@ -57,10 +57,16 @@ a {
   width:100px;
   height: 100px;
 }
-.news img{
-  width:100px;
-  height: 100px;
+.news {
+  float: left;
+  width: 33%;
+  height: 33%
 }
+.news img {
+  width: 50%;
+  height: 50%;
+}
+.herhaalservice a:link {text-decoration: none; color: black;}
 .herhaalservice a:visited { text-decoration: none; color:black; }
 .herhaalservice a:hover { text-decoration: none; color:black; }
 .herhaalservice a:focus { text-decoration: none; color:black; }
