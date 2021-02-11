@@ -10,7 +10,7 @@ include 'inc/stylesheet.inc.php';
 <?php
 include 'inc/menu.inc.php';
 ?>
-<!-- This is the signup please do not delete-- <form action="inc/signup.inc.php" method="POST">
+<!-- This is the signup page please do not delete-- <form action="inc/signup.inc.php" method="POST">
 -->
 <form action="inc/signup.inc.php" method="POST">
  <input type="text" name="salutation" placeholder="Aanhef" required>
