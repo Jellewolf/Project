@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>Service</title>
+<?php
+include 'inc/stylesheet.inc.php';
+?>
 </head>
 <body>
 <?php

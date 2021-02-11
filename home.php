@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>Home</title>
+<?php
+include 'inc/stylesheet.inc.php';
+?>
 </head>
 <body>
 <?php
@@ -19,6 +22,7 @@ include 'inc/menu.inc.php';
 	<br>
 	<br>
 	<br>
+
 		<p>openingstijden</p>
 		<p>adres</p>
 <?php
