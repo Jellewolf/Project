@@ -10,7 +10,9 @@ include 'inc/stylesheet.inc.php';
 <?php
 include 'inc/menu.inc.php';
 ?>
-<h1>SLIDESHOW PLACEHOLDER</h1>
+<?php
+include 'inc/slideshow.inc.php'
+?>
 <br>
 <h2>Onze Service</h2>
 <br>
@@ -22,7 +24,6 @@ include 'inc/menu.inc.php';
 	<br>
 	<br>
 	<br>
-
 		<p>openingstijden</p>
 		<p>adres</p>
 <?php
