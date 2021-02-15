@@ -12,7 +12,7 @@ $street= $_POST['street'];
 $housenumber= $_POST['housenumber'];
 $postalcode = $_POST['postalcode'];
 
-$sql = "INSERT INTO `signup` (`Salutation`, `Firstname`, `Lastname`, `Email`, `Userpass`, `Phonenumber`, `City`, `Street`, `Housenumber`, `Postalcode`, `LoginID`) VALUES ('$salutation', '$firstname', '$lastname', '$email', '$userpass', '$phonenumber', '$city', '$street', '$housenumber', '$postalcode', NULL)";
+$sql = "INSERT INTO `signup` (`salutation`, `firstname`, `lastname`, `email`, `userpass`, `phonenumber`, `city`, `street`, `housenumber`, `postalcode`, `loginID`) VALUES ('$salutation', '$firstname', '$lastname', '$email', '$userpass', '$phonenumber', '$city', '$street', '$housenumber', '$postalcode', NULL)";
 mysqli_query($conn, $sql);
 
 /*This checks if the contactform was succesfully send out (check browser bar)*/
