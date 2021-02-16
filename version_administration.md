@@ -30,3 +30,4 @@ Version/Name/Date/Short summary/ (This is the template u need to use.)
 
 V1.0/Everyone/15-02-2021/Prototype of the website is finished./
 V1.1/Jelle/15-02-2021/removed caps from database./
+V1.2/Milan/16-02-2021/added diffrent css files for each page./

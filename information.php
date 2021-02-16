@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Medicijnenoverzicht</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<title>Voorlichting</title>
+<link rel="icon" href="images/logo_icon.png">
+<link rel="stylesheet" href="css/information_stylesheet.css">
 </head>
 <body>
 	<?php

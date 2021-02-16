@@ -2,9 +2,8 @@
 <html>
 <head>
 <title>Home</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<link rel="icon" href="images/logo_icon.png">
+<link rel="stylesheet" href="css/home_stylesheet.css">
 </head>
 <body>
 <?php
@@ -16,9 +15,9 @@ include 'inc/slideshow.inc.php'
 <br>
 <h2>Onze Service</h2>
 <br>
-	<p class="herhaalservice"><a href="herhaalservice.php">Herhaal Service</a></p>
-	<p class="herhaalservice"><a href="medicijnenoverzicht.php">Medicijnenoverzicht</a></p>
-	<p class="herhaalservice"><a href="inschrijven.php">Inschrijven</a></p>
+	<p class="herhaalservice"><a href="repeatservice.php">Herhaal Service</a></p>
+	<p class="herhaalservice"><a href="medicationoverview.php">Medicijnenoverzicht</a></p>
+	<p class="herhaalservice"><a href="register.php">Inschrijven</a></p>
 	<br>
 	<br>
 	<br>

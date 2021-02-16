@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Service</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<title>Sign Up</title>
+<link rel="icon" href="images/logo_icon.png">
+<link rel="stylesheet" href="css/signup_stylesheet.css">
 </head>
 <body>
 <?php

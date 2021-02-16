@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Herhaalservice</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<title>Herhaal service</title>
+<link rel="icon" href="images/logo_icon.png">
+<link rel="stylesheet" href="css/repeatservice_stylesheet.css">
 </head>
 <body>
 	<?php

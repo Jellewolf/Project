@@ -2,9 +2,8 @@
 <html>
 <head>
 <title>Inschrijven</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<link rel="icon" href="images/logo_icon.png">
+<link rel="stylesheet" href="css/register_stylesheet.css">
 </head>
 <body>
 	<?php
