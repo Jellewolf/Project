@@ -15,9 +15,9 @@ include 'inc/slideshow.inc.php'
 <br>
 <h2>Onze Service</h2>
 <br>
-	<p class="herhaalservice"><a href="repeatservice.php">Herhaal Service</a></p>
-	<p class="herhaalservice"><a href="medicationoverview.php">Medicijnenoverzicht</a></p>
-	<p class="herhaalservice"><a href="register.php">Inschrijven</a></p>
+	<p class="herhaalservice"><a href="pages/repeatservice.php">Herhaal Service</a></p>
+	<p class="herhaalservice"><a href="pages/medicationoverview.php">Medicijnenoverzicht</a></p>
+	<p class="herhaalservice"><a href="pages/register.php">Inschrijven</a></p>
 	<br>
 	<br>
 	<br>

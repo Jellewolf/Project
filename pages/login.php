@@ -2,12 +2,12 @@
 <html>
 <head>
 <title>Login</title>
-<link rel="icon" href="images/logo_icon.png">
-<link rel="stylesheet" href="css/login_stylesheet.css">
+<link rel="icon" href="../images/logo_icon.png">
+<link rel="stylesheet" href="../css/login_stylesheet.css">
 </head>
 <body>
 <?php
-include 'inc/menu.inc.php';
+include '../inc/menu.inc.php';
 ?>
 <form>
  <input type="text" name="e-mail" placeholder="E-mail">
