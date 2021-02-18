@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Medicijnenoverzicht</title>
-<link rel="icon" href="../images/logo_icon.png">
-<link rel="stylesheet" href="../css/medicationoverview_stylesheet.css">
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
 </head>
 <body>
 	<?php

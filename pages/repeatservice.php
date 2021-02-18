@@ -2,14 +2,14 @@
 <html>
 <head>
 <title>Herhaal service</title>
-<link rel="icon" href="../images/logo_icon.png">
-<link rel="stylesheet" href="../css/repeatservice_stylesheet.css">
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
 </head>
 <body>
 	<?php
 	include '../inc/menu.inc.php';
 	?>
-		<p class="tekstblok">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<p class="block1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

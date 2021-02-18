@@ -2,8 +2,9 @@
 <html>
 <head>
 <title>Service</title>
-<link rel="icon" href="../images/logo_icon.png">
-<link rel="stylesheet" href="../css/service_stylesheet.css">
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
+<link rel="stylesheet" href="/css/service.css">
 </head>
 <body>
 <?php

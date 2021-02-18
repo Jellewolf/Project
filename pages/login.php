@@ -2,8 +2,9 @@
 <html>
 <head>
 <title>Login</title>
-<link rel="icon" href="../images/logo_icon.png">
-<link rel="stylesheet" href="../css/login_stylesheet.css">
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
+<link rel="stylehseet" href="/css/login.css">
 </head>
 <body>
 <?php

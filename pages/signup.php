@@ -2,8 +2,10 @@
 <html>
 <head>
 <title>Sign Up</title>
-<link rel="icon" href="../images/logo_icon.png">
-<link rel="stylesheet" href="../css/signup_stylesheet.css">
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
+<link rel="stylehseet" href="/css/login.css">
+<link
 </head>
 <body>
 <?php
