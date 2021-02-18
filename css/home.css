@@ -60,13 +60,14 @@ body {
 
   .block1 {
     display: block; 
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 33%;
+    float:left;
+    margin:auto;
+    width: 33.33%;
     padding:25px;
     text-decoration: none;
     background-color: #414141;
     font-family: 'loraregular';
+    text-align: center;
   }
 
 .block1 a:link {text-decoration: none; color: white;}
@@ -82,24 +83,25 @@ height: 428px;
 .hometext {
   display: block;
   float: left;
-  width: 50%;
+  width: 45%;
   margin: auto;
+  font-family: 'loraregular';
   color: white;
-  border: white 1px;
-  background-color: green;
+  background-color: #414141;
   padding-left:25px;
-  height: 400px;
+  height: 300px;
+  
 }
 .address {
   margin: auto;
-  color: black;
   float: right;
-  width: 50%;
+  width: 45%;
   color: white;
-  border: white 1px;
-  background-color: white;
+  font-family: 'loraregular';
+  background-color:#414141;
   margin-bottom: 20px;
-  height: 400px;
+  height: 300px;
+  padding-left: 25px;
 
 }
 .news {
@@ -115,6 +117,13 @@ height: 428px;
   width: 50%;
   height: 50%;
 }
-.test {
+.main {
+  width: 100%;
+}
+.footer {
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
