@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Service</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<title>Sign Up</title>
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
+<link rel="stylehseet" href="/css/login.css">
+<link
 </head>
 <body>
 <?php
-include 'inc/menu.inc.php';
+include '../inc/menu.inc.php';
 ?>
 <!-- This is the signup page please do not delete-- <form action="inc/signup.inc.php" method="POST">
 -->
-<form action="inc/signup.inc.php" method="POST">
+<form action="/inc/signup.inc.php" method="POST">
  <input type="text" name="salutation" placeholder="Aanhef" required>
  <br>
  <input type="text" name="firstname" placeholder="Voornaam">

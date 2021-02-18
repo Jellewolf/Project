@@ -7,7 +7,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$sql = "INSERT INTO contactform (Firstname, Lastname, Phonenumber, Email, contmessage) 
+$sql = "INSERT INTO contactform (firstname, lastname, phonenumber, email, contmessage) 
 VALUES ('$first', '$last', '$phone', '$email', '$message');";
 mysqli_query($conn, $sql);
 

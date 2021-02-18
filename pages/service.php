@@ -2,13 +2,13 @@
 <html>
 <head>
 <title>Service</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
+<link rel="stylesheet" href="/css/service.css">
 </head>
 <body>
 <?php
-include 'inc/menu.inc.php';
+include '../inc/menu.inc.php';
 ?>
 <!-- This is the contactform v1 please do not delete-->
 <form action="inc/contactform.inc.php" method="POST">

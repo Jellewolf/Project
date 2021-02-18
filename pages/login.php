@@ -2,13 +2,13 @@
 <html>
 <head>
 <title>Login</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
+<link rel="stylehseet" href="/css/login.css">
 </head>
 <body>
 <?php
-include 'inc/menu.inc.php';
+include '../inc/menu.inc.php';
 ?>
 <form>
  <input type="text" name="e-mail" placeholder="E-mail">

@@ -2,13 +2,13 @@
 <html>
 <head>
 <title>Voorlichting</title>
-<?php
-include 'inc/stylesheet.inc.php';
-?>
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="/css/menu.inc.css">
+<link rel="stylesheet" href="/css/service.css">
 </head>
 <body>
 	<?php
-	include 'inc/menu.inc.php';
+	include '../inc/menu.inc.php';
 	?>
 		<p class="tekstblok">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
