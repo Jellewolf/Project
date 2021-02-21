@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Home</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="images/logo.png">
 <link rel="stylesheet" href="/css/menu.inc.css">
 <link rel="stylesheet" href="/css/home.css">
@@ -20,11 +22,6 @@ include 'inc/slideshow.inc.php'
 	<p class="block1"><a href="/pages/medicationoverview.php">Medicijnenoverzicht</a></p>
 	<p class="block1"><a href="/pages/register.php">Inschrijven</a></p>
 </div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
 <div class="home_address">
  <div class="hometext">
 		<p>Openingstijden</p>
@@ -45,20 +42,16 @@ include 'inc/slideshow.inc.php'
         <p>info@apotheekschagen.nl</p>
 	</div>
 </div>
-<div>
+<div class="newsdiv">
 <?php
 include 'inc/news.inc.php';
 ?>
 </div>
-<!--
-    <br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-<p class="footer">TEST</p> -->
+<div>
+<?php
+include 'inc/footer.inc.php';
+?>
+</div>
 </body>
 </html>
 
