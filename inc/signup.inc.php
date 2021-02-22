@@ -16,4 +16,4 @@ $sql = "INSERT INTO `signup` (`salutation`, `firstname`, `lastname`, `email`, `u
 mysqli_query($conn, $sql);
 
 /*This checks if the contactform was succesfully send out (check browser bar)*/
-header("location: ../signup.php?signup=succesfull");
+header("location: /pages/signup.php?signup=succesfull");

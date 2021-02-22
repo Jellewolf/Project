@@ -32,3 +32,4 @@ V1.0/Everyone/15-02-2021/Prototype of the website is finished./
 V1.1/Jelle/15-02-2021/removed caps from database./
 V1.2/Milan/16-02-2021/added diffrent css files for each page./
 V1.3/Milan/16-02-2021/added pages file and changed code./
+V1.4/Jelle/21-02-2021/Fixed divs added footer and changed around classes/fixed them./

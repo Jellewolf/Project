@@ -1,3 +1,4 @@
+<div class="main">
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -13,6 +14,8 @@
   <div class="mySlides fade">
     <img src="images/img3.jpg">
   </div>
+</div>
+</div>
 <script type="text/javascript">
   var slideIndex = 1;
 showSlides(slideIndex);

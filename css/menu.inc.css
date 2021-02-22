@@ -16,7 +16,6 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #414141;
-  font-family: 'loraregular';
   font-size: 25px;
 }
 li {
@@ -45,7 +44,6 @@ h1 {
   background-color: #414141;
   text-align: center;
   color: white;
-  font-family: 'loraregular';
 }
 
 a {
@@ -66,16 +64,9 @@ a {
 .banner  {
 float: right;
 padding-right: 65%;
-padding-top: 1.24%;
+padding-top: 2.3%;
 font-size: 35px;
 color: white;
-font-family: 'loraregular';
 font-style: bold;
 }
 
-body {
-  background-color: #333333;
-}
-h2{
-  color: white;
-}
