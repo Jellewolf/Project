@@ -20,7 +20,7 @@ include 'inc/slideshow.inc.php'
 <div class="main">
 	<p class="block1"><a href="/pages/repeatservice.php">Herhaal Service</a></p>
 	<p class="block1"><a href="/pages/medicationoverview.php">Medicijnenoverzicht</a></p>
-	<p class="block1"><a href="/pages/register.php">Inschrijven</a></p>
+	<p class="block1"><a href="/pages/signup.php">Inschrijven</a></p>
 </div>
 <div class="home_address">
  <div class="hometext">

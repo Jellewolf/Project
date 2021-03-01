@@ -70,7 +70,7 @@ h2{
 .block1 a:visited { text-decoration: none; color:white; }
 .block1 a:hover { text-decoration: none; color:white; }
 .block1 a:focus { text-decoration: none; color:white; }
-.block1 a:hover, a:active { text-decoration: none; background-color: rgb(85, 85, 85);}
+.block1 a:hover, a:active { text-decoration: none; background-color:}
 
 .home_address {
 width: 100%;
@@ -80,23 +80,23 @@ margin-bottom: 150px;
 .hometext {
   display: block;
   float: left;
-  width: 50%;
+  width: 35%;
   color: white;
   background-color: #414141;
   padding-left:25px;
   height: 300px;
-  margin-left: 25%;
+  margin-left: 5%;
   max-width: 450px;
 }
 .address {
   float: right;
-  width: 50%;
+  width: 35%;
   color: white;
   background-color:#414141;
   margin-bottom: 20px;
   height: 300px;
   padding-left: 25px;
-  margin-right: 25%;
+  margin-right: 5%;
   max-width: 450px;
 
 }
@@ -112,14 +112,14 @@ width: 150px;
 height: 150px;
 background-color:#333333;
 }
- 
+
 .main {
   width: 100%;
 }
 .news a:link {text-decoration: none; color: white;}
 .news a:visited { text-decoration: none; color:white; }
 .news a:hover { text-decoration: none; color:white; }
-.news a:focus { text-decoration: none; color:white; }
+.news a:focus { text-decoration: none;}
 .news a:hover, a:active { text-decoration: none;}
 
 .newsdiv {
@@ -147,3 +147,4 @@ max-width: 50%;
 color:white;
 font-size: 15px;
 }
+

@@ -2,24 +2,26 @@ body {
     background-color: #333333;
     font-family: 'loraregular';
   }
-  .footermain   {
-    background-color: #414141;
-    width: 99%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+.textbox {
+    width: 50%;
+    background-color:#414141;
     margin: auto;
-  }
-  .footerleft  {
-  float: left;
+    padding: 20px;
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 15px;
+}
+.contactform {
+  width: 50%;
+  margin: auto;
+  background-color:#414141;
+  padding: 20px;
   text-align: center;
-  max-width: 50%;
-  color:white;
-  font-size: 15px;
-  }
-  .footerright  {
-  float: right;
-  text-align: center;
-  max-width: 50%;
-  color:white;
-  font-size: 15px;
-  }
+  color: white;
+}
+.contactform a:link {text-decoration: none; color: white;}
+.contactform a:visited { text-decoration: none; color:white; }
+.contactform a:hover { text-decoration: none; color:white; }
+.contactform a:focus { text-decoration: none;}
+.contactform a:hover, a:active { text-decoration: none;}

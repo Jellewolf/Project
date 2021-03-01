@@ -23,14 +23,10 @@ include '../inc/menu.inc.php';
  <br>
  <input class="logform" type="text" name="password" placeholder="Wachtwoord">
  <br>
- <button type="submit" name="submit">Inloggen</button> 
- <br>
-<button type="link" name="signup"><a href="signup.php">signup</a></button>
- <br>
- <button type="link" name="reset"><a href="passreset.php">passreset</a></button>
+ <button class="logbutton" type="submit" name="submit">Inloggen</button> 
+<button class="signbutton" type="link" name="signup"><a href="signup.php">Registreren</a></button>
+ <button class="resbutton" type="link" name="reset"><a href="passreset.php">Wachtwoord vergeten?</a></button>
  </div>
  <br>
- <div>
-</div>
 </body>
 </html>

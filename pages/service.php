@@ -7,31 +7,37 @@
 <link rel="icon" href="../images/logo.png">
 <link rel="stylesheet" href="/css/menu.inc.css">
 <link rel="stylesheet" href="/css/service.css">
+<link rel="stylesheet" href="/css/news.css">
 </head>
 <body>
+<div>
 <?php
 include '../inc/menu.inc.php';
 ?>
-<div>
-<!-- This is the contactform v1 please do not delete-->
-<form action="../inc/contactform.inc.php" method="POST">
- <input type="text" name="first" placeholder="Voornaam">
- <br>
- <input type="text" name="last" placeholder="Achternaam">
- <br>
- <input type="text" name="phone" placeholder="Telefoonnummer">
- <br>
- <input type="text" name="email" placeholder="E-mail">
- <br>
- <input type="text" name="message" placeholder="Bericht">
- <br>
- <button type="submit" name="submit">Bericht Versturen</button>
-</form>
 </div>
-<div>
-<?php
-include '../inc/footer.inc.php'
-?>
+<div class="textbox">
+    Diensten
+    <br><br>
+    De teams van onze BENU apotheken staan graag voor u klaar.
+    In onze dienstverlening staat u dan ook centraal.
+    We willen u graag zekerheid en veel gemak bieden.
+    Bij BENU Apotheek hebben wij daarom diverse (online) services waarvan u gebruik kunt maken.
+    Een paar voorbeelden:
+    <br><br>
+    -Diabetesservice <br>
+    -<br>
+    -<br>
+    -<br>
+    -<br>
+    -<br>
+
+    <br><br>
+    De online diensten van uw apotheek <br>
+    Ga naar 'diensten' bij uw apotheek en kijk hoe we u online kunnen helpen.
+
+</div>
+<div class="contactform">
+<a href="/pages/contact.php">Als u contact met ons op wilt nemen klik dan hier</a>
 </div>
 </body>
 </html>
