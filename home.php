@@ -9,12 +9,16 @@
 <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
+<div>
 <?php
 include 'inc/menu.inc.php';
 ?>
+</div>
+<div class="main">
 <?php
 include 'inc/slideshow.inc.php'
 ?>
+</div>
 <br>
 <h2>Onze Service</h2>
 <div class="main">
