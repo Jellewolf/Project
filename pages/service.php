@@ -12,6 +12,7 @@
 <?php
 include '../inc/menu.inc.php';
 ?>
+<div>
 <!-- This is the contactform v1 please do not delete-->
 <form action="../inc/contactform.inc.php" method="POST">
  <input type="text" name="first" placeholder="Voornaam">
@@ -26,5 +27,11 @@ include '../inc/menu.inc.php';
  <br>
  <button type="submit" name="submit">Bericht Versturen</button>
 </form>
+</div>
+<div>
+<?php
+include '../inc/footer.inc.php'
+?>
+</div>
 </body>
 </html>

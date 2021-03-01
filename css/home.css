@@ -129,7 +129,9 @@ background-color:#333333;
 .footermain p  {
   background-color:#414141;
   width: 100%;
-  padding: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin: auto;
 }
 .footerleft  {
 float: left;
