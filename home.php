@@ -21,7 +21,7 @@ include 'inc/slideshow.inc.php'
 </div>
 <br>
 <h2>Onze Service</h2>
-<div class="main">
+<div class="main1">
 	<p class="block1"><a href="/pages/repeatservice.php">Herhaal Service</a></p>
 	<p class="block1"><a href="/pages/medicationoverview.php">Medicijnenoverzicht</a></p>
 	<p class="block1"><a href="/pages/signup.php">Inschrijven</a></p>

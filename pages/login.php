@@ -7,7 +7,6 @@
 <link rel="icon" href="../images/logo.png">
 <link rel="stylesheet" href="/css/menu.inc.css">
 <link rel="stylesheet" href="/css/login.css">
-<link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
 <div class="incmain">
@@ -28,5 +27,18 @@ include '../inc/menu.inc.php';
  <button class="resbutton" type="link" name="reset"><a href="passreset.php">Wachtwoord vergeten?</a></button>
  </div>
  <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <?php
+include '../inc/footer.inc.php'
+?>
 </body>
 </html>

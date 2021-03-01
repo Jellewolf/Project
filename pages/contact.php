@@ -12,21 +12,29 @@
 <?php
 include '../inc/menu.inc.php';
 ?>
-<div>
+<div class="conttitle">
+<p>
+    Article title text placeholder.
+</p>
+</div>
+<div class="contbox">
 <!-- This is the contactform v1 please do not delete-->
 <form action="../inc/contactform.inc.php" method="POST">
- <input type="text" name="first" placeholder="Voornaam">
+ <input class="contform" type="text" name="first" placeholder="Voornaam">
  <br>
- <input type="text" name="last" placeholder="Achternaam">
+ <input class="contform" type="text" name="last" placeholder="Achternaam">
  <br>
- <input type="text" name="phone" placeholder="Telefoonnummer">
+ <input class="contform" type="text" name="phone" placeholder="Telefoonnummer" required>
  <br>
- <input type="text" name="email" placeholder="E-mail">
+ <input class="contform" type="text" name="email" placeholder="E-mail">
  <br>
- <input type="text" name="message" placeholder="Bericht">
+ <textarea class="contform" name="message" placeholder="Bericht" rows="10" cols="50"></textarea>
  <br>
- <button type="submit" name="submit">Bericht Versturen</button>
+ <button class="sendbutton" type="submit" name="submit">Bericht Versturen</button>
 </form>
 </div>
+<?php
+include '../inc/footer.inc.php'
+?>
 </body>
 </html>

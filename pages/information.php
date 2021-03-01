@@ -25,6 +25,12 @@
 		(Maak hier een klein overzicht van informatie over aandoeningen.
 		In verdeling van A tm Z)
 	</div>
+<br>
+<br>
+<br>
+<br>
+<?php
+include '../inc/footer.inc.php'
+?>
 </body>
-
 </html>

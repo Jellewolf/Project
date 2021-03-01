@@ -40,5 +40,8 @@ include '../inc/menu.inc.php';
 <div class="contactform">
 <a href="/pages/contact.php">Als u contact met ons op wilt nemen klik dan hier</a>
 </div>
+<?php
+include '../inc/footer.inc.php'
+?>
 </body>
 </html>

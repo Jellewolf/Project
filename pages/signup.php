@@ -38,5 +38,17 @@ include '../inc/menu.inc.php';
  <br>
  <button type="submit" name="submit">Registreren</button>
 </form>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+<?php
+include '../inc/footer.inc.php'
+?>
 </body>
 </html>
