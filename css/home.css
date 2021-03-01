@@ -80,23 +80,23 @@ margin-bottom: 150px;
 .hometext {
   display: block;
   float: left;
-  width: 40%;
+  width: 50%;
   color: white;
   background-color: #414141;
   padding-left:25px;
   height: 300px;
-  margin-left: 10%;
+  margin-left: 25%;
   max-width: 450px;
 }
 .address {
   float: right;
-  width: 40%;
+  width: 50%;
   color: white;
   background-color:#414141;
   margin-bottom: 20px;
   height: 300px;
   padding-left: 25px;
-  margin-right: 10%;
+  margin-right: 25%;
   max-width: 450px;
 
 }
@@ -129,7 +129,8 @@ background-color:#333333;
 .footermain p  {
   background-color:#414141;
   width: 100%;
-  padding: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   margin: auto;
 }
 .footerleft  {
