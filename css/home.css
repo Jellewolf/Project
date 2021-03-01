@@ -17,8 +17,8 @@ h2{
   position: relative;
   margin-left: 10%;
   max-height: 300px;
-  max-width: 50%
-  float:left;
+  max-width: 50%;
+  float: left;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -44,6 +44,7 @@ h2{
   to {opacity: 1}
 }
 .mySlides {
+  /*Does syntax "align" exist and work correctly? The editor says not.*/
   align: left;
   height: 200px;
 }
@@ -70,7 +71,7 @@ h2{
 .block1 a:visited { text-decoration: none; color:white; }
 .block1 a:hover { text-decoration: none; color:white; }
 .block1 a:focus { text-decoration: none; color:white; }
-.block1 a:hover, a:active { text-decoration: none; background-color:}
+.block1 a:hover, a:active { text-decoration: none; background-color: none}
 
 .home_address {
 width: 100%;
@@ -81,20 +82,20 @@ margin-bottom: 150px;
   display: block;
   float: left;
   width: 35%;
+  height: 300px;
   color: white;
   background-color: #414141;
   padding-left:25px;
-  height: 300px;
   margin-left: 5%;
   max-width: 450px;
 }
 .address {
   float: right;
   width: 35%;
+  height: 300px;
   color: white;
   background-color:#414141;
   margin-bottom: 20px;
-  height: 300px;
   padding-left: 25px;
   margin-right: 5%;
   max-width: 450px;
@@ -147,4 +148,3 @@ max-width: 50%;
 color:white;
 font-size: 15px;
 }
-

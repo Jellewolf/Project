@@ -24,16 +24,17 @@ include '../inc/menu.inc.php';
     Bij BENU Apotheek hebben wij daarom diverse (online) services waarvan u gebruik kunt maken.
     Een paar voorbeelden:
     <br><br>
-    -Diabetesservice <br>
-    -<br>
-    -<br>
-    -<br>
-    -<br>
-    -<br>
+    - Diabetesservice <br>
+    - Herhaalservice<br>
+    - Uw medicijnen staan klaar<br>
+    - Inhalatie instructies<br>
+    - Mijn APO App<br>
+    - Webshop<br>
 
     <br><br>
     De online diensten van uw apotheek <br>
-    Ga naar 'diensten' bij uw apotheek en kijk hoe we u online kunnen helpen.
+    Ga naar 'diensten' bij uw apotheek en kijk hoe we u online kunnen helpen. <br>
+    Volg de instructies en schrijf u in.
 
 </div>
 <div class="contactform">

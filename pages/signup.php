@@ -7,7 +7,7 @@
 <link rel="icon" href="../images/logo.png">
 <link rel="stylesheet" href="/css/menu.inc.css">
 <link rel="stylesheet" href="/css/login.css">
-<link
+<link >
 </head>
 <body>
 <?php

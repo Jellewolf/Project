@@ -17,3 +17,4 @@ mysqli_query($conn, $sql);
 
 /*This checks if the contactform was succesfully send out (check browser bar)*/
 header("location: /pages/signup.php?signup=succesfull");
+?>
