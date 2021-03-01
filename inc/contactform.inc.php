@@ -12,5 +12,6 @@ VALUES ('$first', '$last', '$phone', '$email', '$message');";
 mysqli_query($conn, $sql);
 
 /*This checks if the contactform was succesfully send out (check browser bar)*/
-header("location: /pages/service.php?bericht=verstuurd");
+header("location: /pages/contact.php?bericht=verstuurd");
 
+?>
