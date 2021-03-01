@@ -7,9 +7,11 @@
 <link rel="stylesheet" href="/css/menu.inc.css">
 <link rel="stylesheet" href="/css/home.css">
 <meta charset="UTF-8">
-<title>test1</title>
+<title>news 3</title>
 </head>
 <body>
-    
+<?php
+include '../inc/menu.inc.php';
+?> 
 </body>
 </html>
