@@ -69,3 +69,7 @@ a {
     color: white;
     font-style: bold;
 }
+
+.activepage {
+    background-color: rgb(85, 85, 85);
+}
