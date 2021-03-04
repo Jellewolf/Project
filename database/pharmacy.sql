@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 11 feb 2021 om 15:43
+-- Gegenereerd op: 04 mrt 2021 om 10:10
 -- Serverversie: 10.4.17-MariaDB
 -- PHP-versie: 8.0.0
 
@@ -28,11 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `contactform` (
-  `Firstname` varchar(100) NOT NULL,
-  `Lastname` varchar(100) NOT NULL,
-  `Phonenumber` varchar(50) NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `ContactformID` int(11) NOT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `phonenumber` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `contactformID` int(11) NOT NULL,
   `contmessage` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -40,8 +40,12 @@ CREATE TABLE `contactform` (
 -- Gegevens worden geëxporteerd voor tabel `contactform`
 --
 
-INSERT INTO `contactform` (`Firstname`, `Lastname`, `Phonenumber`, `Email`, `ContactformID`, `contmessage`) VALUES
-('Jelle', 'Wolf', '0615240373', 'jellewolf3@gmail.com', 4, 'reewrwe');
+INSERT INTO `contactform` (`firstname`, `lastname`, `phonenumber`, `email`, `contactformID`, `contmessage`) VALUES
+('Jelle', 'Wolf', '0615240373', 'jellewolf3@gmail.com', 4, 'reewrwe'),
+('Jelle de Wolf', 'Wolf', '0615240373', 'jellewolf3@gmail.com', 5, 'klikklik'),
+('', '', '', '', 6, ''),
+('', '', '', '', 7, ''),
+('', '', '67675675765756', '', 8, '');
 
 -- --------------------------------------------------------
 
@@ -50,9 +54,9 @@ INSERT INTO `contactform` (`Firstname`, `Lastname`, `Phonenumber`, `Email`, `Con
 --
 
 CREATE TABLE `medicine` (
-  `MedicineName` varchar(30) NOT NULL,
-  `MedicineStock` int(11) NOT NULL,
-  `MedicineID` int(11) NOT NULL
+  `medicineName` varchar(30) NOT NULL,
+  `medicineStock` int(11) NOT NULL,
+  `medicineID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -62,22 +66,23 @@ CREATE TABLE `medicine` (
 --
 
 CREATE TABLE `news` (
-  `NewsImages` varchar(256) NOT NULL,
-  `NewsName` varchar(256) NOT NULL,
-  `NewsArticle` varchar(1000) NOT NULL,
-  `NewsDate` date NOT NULL,
-  `NewsID` int(11) NOT NULL
+  `newsimages` varchar(256) NOT NULL,
+  `newsname` varchar(256) NOT NULL,
+  `newsarticle` varchar(1000) NOT NULL,
+  `newsdate` date NOT NULL,
+  `newsID` int(11) NOT NULL,
+  `newslinks` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `news`
 --
 
-INSERT INTO `news` (`NewsImages`, `NewsName`, `NewsArticle`, `NewsDate`, `NewsID`) VALUES
-('placeholder1.png', 'Nieuws artikel 1 week 5, 2021', 'week 5', '2021-02-05', 1),
-('placeholder1.png', 'Nieuws artikel 2 week 6, 2021', 'week 6', '2021-02-12', 2),
-('placeholder1.png', 'Nieuws artikel 3 week 7, 2021', 'week 7', '2021-02-19', 5),
-('placeholder1.png', 'nieuws artikel 4, week 8 2021', 'week 8', '2021-02-26', 6);
+INSERT INTO `news` (`newsimages`, `newsname`, `newsarticle`, `newsdate`, `newsID`, `newslinks`) VALUES
+('placeholder1.png', 'Nieuws artikel 1 week 5, 2021', 'week 5', '2021-02-05', 1, 'news1.php'),
+('placeholder1.png', 'Nieuws artikel 2 week 6, 2021', 'Nieuwe website gelaunched', '2021-02-12', 2, 'news1.php'),
+('placeholder1.png', 'Nieuws artikel 3 week 7, 2021', 'Wij zitten nu op een nieuwe locatie', '2021-02-19', 5, 'news2.php'),
+('placeholder1.png', 'nieuws artikel 4, week 8 2021', 'Het vaccine is nu af te halen', '2021-02-26', 6, 'news3.php');
 
 -- --------------------------------------------------------
 
@@ -86,24 +91,24 @@ INSERT INTO `news` (`NewsImages`, `NewsName`, `NewsArticle`, `NewsDate`, `NewsID
 --
 
 CREATE TABLE `signup` (
-  `Salutation` varchar(100) DEFAULT NULL,
-  `Firstname` varchar(100) NOT NULL,
-  `Lastname` varchar(100) NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `Userpass` varchar(20) NOT NULL,
-  `Phonenumber` varchar(50) NOT NULL,
-  `City` varchar(100) DEFAULT NULL,
-  `Street` varchar(100) DEFAULT NULL,
-  `Housenumber` varchar(11) NOT NULL,
-  `Postalcode` varchar(100) NOT NULL,
-  `LoginID` int(11) NOT NULL
+  `salutation` varchar(100) DEFAULT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `fastname` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `userpass` varchar(20) NOT NULL,
+  `phonenumber` varchar(50) NOT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  `street` varchar(100) DEFAULT NULL,
+  `housenumber` varchar(11) NOT NULL,
+  `postalcode` varchar(100) NOT NULL,
+  `loginID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `signup`
 --
 
-INSERT INTO `signup` (`Salutation`, `Firstname`, `Lastname`, `Email`, `Userpass`, `Phonenumber`, `City`, `Street`, `Housenumber`, `Postalcode`, `LoginID`) VALUES
+INSERT INTO `signup` (`salutation`, `firstname`, `fastname`, `email`, `userpass`, `phonenumber`, `city`, `street`, `housenumber`, `postalcode`, `loginID`) VALUES
 ('Dhr', 'Jelle', 'Wolf', 'jellewolf3@gmail.com', 'test', '06354354345', 'Den Hoorn', 'Zouteland', '9', '1797BA', 23),
 ('Dhr', 'Jelle', 'Wolf', 'jellewolf3@gmail.com', 'test', '06354354345', 'Den Hoorn', 'Zouteland', '9', '1797BA', 24),
 ('Dhr', 'Jelle', 'Wolf', 'jellewolf3@gmail.com', 'test4', '0615240373', 'Den Hoorn', 'Zouteland', 'Zouteland', '1797BA', 25),
@@ -120,25 +125,25 @@ INSERT INTO `signup` (`Salutation`, `Firstname`, `Lastname`, `Email`, `Userpass`
 -- Indexen voor tabel `contactform`
 --
 ALTER TABLE `contactform`
-  ADD PRIMARY KEY (`ContactformID`);
+  ADD PRIMARY KEY (`contactformID`);
 
 --
 -- Indexen voor tabel `medicine`
 --
 ALTER TABLE `medicine`
-  ADD PRIMARY KEY (`MedicineID`);
+  ADD PRIMARY KEY (`medicineID`);
 
 --
 -- Indexen voor tabel `news`
 --
 ALTER TABLE `news`
-  ADD PRIMARY KEY (`NewsID`);
+  ADD PRIMARY KEY (`newsID`);
 
 --
 -- Indexen voor tabel `signup`
 --
 ALTER TABLE `signup`
-  ADD PRIMARY KEY (`LoginID`);
+  ADD PRIMARY KEY (`loginID`);
 
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
@@ -148,58 +153,25 @@ ALTER TABLE `signup`
 -- AUTO_INCREMENT voor een tabel `contactform`
 --
 ALTER TABLE `contactform`
-  MODIFY `ContactformID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `contactformID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT voor een tabel `medicine`
 --
 ALTER TABLE `medicine`
-  MODIFY `MedicineID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `medicineID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT voor een tabel `news`
 --
 ALTER TABLE `news`
-  MODIFY `NewsID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `newsID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT voor een tabel `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `LoginID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
---
--- AUTO_INCREMENT voor geëxporteerde tabellen
---
-
---
--- AUTO_INCREMENT voor een tabel `contactform`
---
-ALTER TABLE `contactform`
-  MODIFY `ContactformID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT voor een tabel `medicine`
---
-ALTER TABLE `medicine`
-  MODIFY `MedicineID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT voor een tabel `news`
---
-ALTER TABLE `news`
-  MODIFY `NewsID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT voor een tabel `signup`
---
-ALTER TABLE `signup`
-  MODIFY `LoginID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `loginID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
