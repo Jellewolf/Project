@@ -1,6 +1,7 @@
 
 	<div class="logo">
-		<img src="/images/logo.png" alt="logo"><p class="banner">Apotheek Dhr. J. Schut</p>
+		<a href="/home.php"><img src="/images/logo.png" alt="logo"></a>
+		<a href="/home.php"><p class="banner">Apotheek Dhr. J. Schut</p></a>
 	</div>
 			<div class="listtext">
 				<ul>
