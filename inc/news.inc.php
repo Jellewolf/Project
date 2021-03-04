@@ -12,6 +12,4 @@ if ($resultcheck > 0) {
         <a href='pages/news1.php?ID=".$row['newsID']."'><img src='/images/".$row['newsimages']."'>"."<br />" . $row['newsarticle']."</a></div>";
     }
 }
-//echo $row['NewsArticle'] . "<div class='news'><img src='/images/".$row['NewsImages']."'></div>";
-
 ?>
