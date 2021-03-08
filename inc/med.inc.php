@@ -17,7 +17,7 @@ if ($resultcheck > 0) {
 
 ?>
 OH WAIT LAAT MAAR HIJ STAAT WEL BIJ DE HISTORY. Zal ik doen. Ik commit nu. Cool.
-lol nice probeer nog maar een keer te committen dan xDik zal gelijk checken
+lol nice probeer nog maar een keer te committen dan xDik zal gelijk checken IK HEB HEM BINNEN HEHE aight nice. Oke dan laat ik jou verder je ding doen ga ik mijn koffie halen haha. ik zal de live share verlaten
 aight laten we even kijken (laat deze convo maar even staan als test.) als je nu naar source control gaat kan je op push clicken doe dat
  en ga daarna naar
  github desktop waar je hem dan kan pushen 
