@@ -15,7 +15,7 @@
 	?>
 </div>
 <div class="textbox">
-Kleine opsomming van medicijnen van A tot Z
+Kleine opsomming van medicijnen van A tot Z.
 </div>
 <?php
 	include '../inc/med.inc.php';

@@ -1,18 +1,15 @@
 <?php
 include_once 'dbh.inc.php';
 
-$sql = "SELECT * FROM medicine";
+$sql = "SELECT * FROM medicine ORDER BY medicinename";
 $result = mysqli_query($conn, $sql);
 $resultcheck = mysqli_num_rows($result);
-
-/*This displays the image, name, and stock count from the database*/
-
+/*This displays the image and name from the database*/
 if ($resultcheck > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "<div class='medimg'><img src='/images/".$row['medicineimage']."'></div>";
-        echo "<div class='med'>".$row['medicinename']."</div>";
-        echo "<div class='medstock'>We hebben nog ".$row['medicinestock']." van dit medicijn over.</div>";
+        echo "<div class='med'>
+        <img src='/images/".$row['medicineimage']."'>" . $row['medicinename']."</a></div>";
+    
       }
 }
-
 ?>

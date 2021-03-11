@@ -82,26 +82,15 @@ font-size: 15px;
 }
 .med {
   float: left;
-  width: 10%;
-  height: 10%;
-  padding: 5px;
-  color: white;
-  text-align: left;
+  width: 50%;
+  height: 50%;
+  padding-bottom: 15px;
+  color:white;
 }
-.medstock {
+.med img {
   float: left;
-  width: 10%;
-  height: 10%;
-  padding: 5px;
-  color: white;
-  text-align: left;
-}
-.medimg img {
-  float: left;
-  width: 20%;
-  height: 20%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-
+  width: 50%;
+  height: 50%;
+  padding-bottom: 15px;
+  padding-right: 15px;
 }
