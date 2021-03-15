@@ -20,7 +20,7 @@ include '../inc/menu.inc.php';
 <div class="contbox">
 <!-- This is the contactform v1 please do not delete-->
 <form action="../inc/contactform.inc.php" method="POST">
- <input class="contform" type="text" name="first" placeholder="Voornaam">
+ <input class="contform" type="text" name="first" placeholder="Voornaam" required>
  <br>
  <input class="contform" type="text" name="last" placeholder="Achternaam">
  <br>

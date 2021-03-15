@@ -15,29 +15,31 @@ include '../inc/menu.inc.php';
 ?>
 <!-- This is the signup page please do not delete-- <form action="inc/signup.inc.php" method="POST">
 -->
+<div class="logbox">
 <form action="/inc/signup.inc.php" method="POST">
- <input type="text" name="salutation" placeholder="Aanhef" required>
+ <input class="logform" type="text" name="salutation" placeholder="Aanhef" required>
  <br>
- <input type="text" name="firstname" placeholder="Voornaam">
+ <input class="logform" type="text" name="firstname" placeholder="Voornaam">
  <br>
- <input type="text" name="lastname" placeholder="Achternaam">
+ <input class="logform" type="text" name="lastname" placeholder="Achternaam">
  <br>
- <input type="text" name="email" placeholder="E-mail">
+ <input class="logform" type="text" name="email" placeholder="E-mail">
  <br>
- <input type="text" name="userpass" placeholder="Wachtwoord">
+ <input class="logform" type="text" name="userpass" placeholder="Wachtwoord">
  <br>
- <input type="text" name="phonenumber" placeholder="Telefoonnummer">
+ <input class="logform" type="text" name="phonenumber" placeholder="Telefoonnummer">
  <br>
- <input type="text" name="city" placeholder="Stad" required>
+ <input class="logform" type="text" name="city" placeholder="Stad" required>
  <br>
- <input type="text" name="street" placeholder="Straat" required>
+ <input class="logform" type="text" name="street" placeholder="Straat" required>
  <br>
- <input type="text" name="housenumber" placeholder="Huisnummer">
+ <input class="logform" type="text" name="housenumber" placeholder="Huisnummer">
  <br>
- <input type="text" name="postalcode" placeholder="Postcode">
+ <input class="logform" type="text" name="postalcode" placeholder="Postcode">
  <br>
- <button type="submit" name="submit">Registreren</button>
+ <button class="logbutton" type="submit" name="submit">Registreren</button>
 </form>
+</div>
  <br>
  <br>
  <br>

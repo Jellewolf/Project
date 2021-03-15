@@ -1,74 +1,119 @@
 body {
     background-color: #333333;
     font-family: 'loraregular';
-  }
+}
+
 .incmain {
     width: 100%;
     margin: auto;
     margin-bottom: 40px;
 }
+
 .logbox {
-  width: 15%;
-  margin: auto;
-  background-color: #414141;
-  text-align: center;
+    width: 15%;
+    margin: auto;
+    background-color: #414141;
+    text-align: center;
+    margin-top: 50px;
 }
+
 .logform {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
 }
+
 .signbutton {
-  float: left;
-  width: 40%;
-  margin-left: 5%;
-  margin-top: 10px;
-  margin-bottom: 5px;
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
+
 .resbutton {
-  float: right;
-  width: 40%;
-  margin-right: 5%;
-  margin-top: 10px;
-  margin-bottom: 5px;
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
+
 .logbutton {
-  width: 75%;
-  padding: 5px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+    width: 75%;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.signbutton a:link {text-decoration: none; color: black;}
-.signbutton a:visited { text-decoration: none; color:black; }
-.signbutton a:hover { text-decoration: none; color:black; }
-.signbutton a:focus { text-decoration: none;}
-.signbutton a:hover, a:active { text-decoration: none;}
 
-.resbutton a:link {text-decoration: none; color: black;}
-.resbutton a:visited { text-decoration: none; color:black; }
-.resbutton a:hover { text-decoration: none; color:black; }
-.resbutton a:focus { text-decoration: none;}
-.resbutton a:hover, a:active { text-decoration: none;}
-
-
-.footermain p  {
-  background-color: #414141;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: auto;
-  width: 100%;
+.signbutton a:link {
+    text-decoration: none;
+    color: black;
 }
-.footerleft  {
-float: left;
-text-align: center;
-max-width: 50%;
-color:white;
-font-size: 15px;
+
+.signbutton a:visited {
+    text-decoration: none;
+    color: black;
 }
-.footerright  {
-float: right;
-text-align: center;
-max-width: 50%;
-color:white;
-font-size: 15px;
+
+.signbutton a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.signbutton a:focus {
+    text-decoration: none;
+}
+
+.signbutton a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.resbutton a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.resbutton a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.resbutton a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.resbutton a:focus {
+    text-decoration: none;
+}
+
+.resbutton a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.footermain p {
+    background-color: #414141;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 100%;
+}
+
+.footerleft {
+    float: left;
+    text-align: center;
+    max-width: 50%;
+    color: white;
+    font-size: 15px;
+}
+
+.footerright {
+    float: right;
+    text-align: center;
+    max-width: 50%;
+    color: white;
+    font-size: 15px;
 }
