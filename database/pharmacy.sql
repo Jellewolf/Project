@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 04 mrt 2021 om 10:10
+-- Gegenereerd op: 15 mrt 2021 om 18:35
 -- Serverversie: 10.4.17-MariaDB
 -- PHP-versie: 8.0.0
 
@@ -54,10 +54,22 @@ INSERT INTO `contactform` (`firstname`, `lastname`, `phonenumber`, `email`, `con
 --
 
 CREATE TABLE `medicine` (
-  `medicineName` varchar(30) NOT NULL,
-  `medicineStock` int(11) NOT NULL,
+  `medicinename` varchar(30) NOT NULL,
+  `medicineimage` varchar(30) NOT NULL,
+  `medicinestock` int(11) NOT NULL,
   `medicineID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `medicine`
+--
+
+INSERT INTO `medicine` (`medicinename`, `medicineimage`, `medicinestock`, `medicineID`) VALUES
+('yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'placeholder1.png', 3, 9),
+('bb', 'placeholder1.png', 5, 10),
+('cc', 'placeholder1.png', 0, 11),
+('aa', 'placeholder1.png', 0, 12),
+('d', 'placeholder1.png', 0, 13);
 
 -- --------------------------------------------------------
 
@@ -71,18 +83,19 @@ CREATE TABLE `news` (
   `newsarticle` varchar(1000) NOT NULL,
   `newsdate` date NOT NULL,
   `newsID` int(11) NOT NULL,
-  `newslinks` varchar(100) NOT NULL
+  `newslinks` varchar(100) NOT NULL,
+  `newsmessage` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `news`
 --
 
-INSERT INTO `news` (`newsimages`, `newsname`, `newsarticle`, `newsdate`, `newsID`, `newslinks`) VALUES
-('placeholder1.png', 'Nieuws artikel 1 week 5, 2021', 'week 5', '2021-02-05', 1, 'news1.php'),
-('placeholder1.png', 'Nieuws artikel 2 week 6, 2021', 'Nieuwe website gelaunched', '2021-02-12', 2, 'news1.php'),
-('placeholder1.png', 'Nieuws artikel 3 week 7, 2021', 'Wij zitten nu op een nieuwe locatie', '2021-02-19', 5, 'news2.php'),
-('placeholder1.png', 'nieuws artikel 4, week 8 2021', 'Het vaccine is nu af te halen', '2021-02-26', 6, 'news3.php');
+INSERT INTO `news` (`newsimages`, `newsname`, `newsarticle`, `newsdate`, `newsID`, `newslinks`, `newsmessage`) VALUES
+('week5.jpg', 'Nieuws artikel 1 week 5, 2021', 'week 5', '2021-02-05', 1, 'news1.php', 'qwertyuiop'),
+('websitelaunch.png', 'Nieuws artikel 2 week 6, 2021', 'Nieuwe website gelaunched', '2021-02-12', 2, 'news1.php', 'asdfghjkl'),
+('location.png', 'Nieuws artikel 3 week 7, 2021', 'Wij zitten nu op een nieuwe locatie', '2021-02-19', 5, 'news2.php', 'zxcvbnm'),
+('vaccines.jpg', 'nieuws artikel 4, week 8 2021', 'Het vaccine is nu af te halen', '2021-02-26', 6, 'news3.php', 'qwertyuiop');
 
 -- --------------------------------------------------------
 
@@ -159,7 +172,7 @@ ALTER TABLE `contactform`
 -- AUTO_INCREMENT voor een tabel `medicine`
 --
 ALTER TABLE `medicine`
-  MODIFY `medicineID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `medicineID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT voor een tabel `news`
