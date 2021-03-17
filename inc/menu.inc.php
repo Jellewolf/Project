@@ -6,6 +6,7 @@ function active($currect_page){
       echo 'activepage'; //class name in css 
   } 
 }
+session_start();
 ?>
 
 	<div class="logo">
@@ -17,7 +18,14 @@ function active($currect_page){
 					<li class="<?php active('home.php');?>"><a href="/home.php">Home</a></li>
 					<li class="<?php active('service.php');?>"><a href="/pages/service.php">Service</a></li>
 					<li class="<?php active('information.php');?>"><a href="/pages/information.php">Voorlichting</a></li>
-					<li class="<?php active('login.php');?>"><a href="/pages/login.php">Login</a></li>
+					<?php
+					if (isset($_SESSION["useruid"])) {
+						echo "<li><a href='/pages/logout.php'>Log out</a></li>";
+					}
+					else {
+						echo "<li><a href='/pages/login.php'>Login</a></li>";
+					}
+					?>
    	 			</ul>
 			</div>	
     			<!--This is a menu include not a stand alone file just a file for the main menu/logo-->

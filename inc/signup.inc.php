@@ -1,20 +1,47 @@
 <?php
-include_once 'dbh.inc.php';
-/*This defines the connection to the database*/
-$salutation = $_POST['salutation'];
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-$email = $_POST['email'];
-$userpass = $_POST['userpass'];
-$phonenumber = $_POST['phonenumber'];
-$city = $_POST['city'];
-$street= $_POST['street'];
-$housenumber= $_POST['housenumber'];
-$postalcode = $_POST['postalcode'];
 
-$sql = "INSERT INTO `signup` (`salutation`, `firstname`, `lastname`, `email`, `userpass`, `phonenumber`, `city`, `street`, `housenumber`, `postalcode`, `loginID`) VALUES ('$salutation', '$firstname', '$lastname', '$email', '$userpass', '$phonenumber', '$city', '$street', '$housenumber', '$postalcode', NULL)";
-mysqli_query($conn, $sql);
+if(isset($_POST["submit"])){
 
-/*This checks if the contactform was succesfully send out (check browser bar)*/
-header("location: /pages/signup.php?signup=succesfull");
-?>
+    $salutation = $_POST['salutation'];
+    $useruid = $_POST['uid'];
+    $lastname = $_POST['lastname'];
+    $email = $_POST['email'];
+    $userpass = $_POST['pwd'];
+    $userpassrepeat = $_POST['userpassrepeat'];
+    $city = $_POST['city'];
+    $street= $_POST['street'];
+    $housenumber= $_POST['housenumber'];
+    $postalcode = $_POST['postalcode'];
+    
+    require_once 'dbh.inc.php';
+    require_once 'functions.inc.php';
+
+    if (emptyInputSignup($salutation, $useruid, $lastname, $email, $userpass, $userpassrepeat, $city, $street, $housenumber, $postalcode )!==false) {
+        header("location: ../pages/signup.php?error=emptyinput");
+        exit();  
+    }
+    if (invalidfirstname($useruid)!==false) {
+        header("location: ../pages/signup.php?error=invaliduseruid");
+        exit();  
+    }
+    if (invalidemail($email)!==false) {
+        header("location: ../pages/signup.php?error=invalidemail");
+        exit();  
+    }    
+    if (pwdmatch($userpass, $userpassrepeat)!==false) {
+        header("location: ../pages/signup.php?error=invalidpassword");
+        exit();  
+    }
+    if (uidExists($conn, $useruid, $email)!==false) {
+        header("location: ../pages/signup.php?error=firstnametaken");
+        exit();  
+    }
+
+    createUser($conn, $salutation,  $useruid, $lastname, $email, $userpass, $userpassrepeat, $city, $street, $housenumber, $postalcode);
+    
+
+}
+else {
+    header("location: ../signup.php");
+    exit();  
+}
