@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 15 mrt 2021 om 18:35
+-- Gegenereerd op: 17 mrt 2021 om 22:43
 -- Serverversie: 10.4.17-MariaDB
--- PHP-versie: 8.0.0
+-- PHP-versie: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -105,30 +105,27 @@ INSERT INTO `news` (`newsimages`, `newsname`, `newsarticle`, `newsdate`, `newsID
 
 CREATE TABLE `signup` (
   `salutation` varchar(100) DEFAULT NULL,
-  `firstname` varchar(100) NOT NULL,
-  `fastname` varchar(100) NOT NULL,
+  `useruid` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `userpass` varchar(20) NOT NULL,
-  `phonenumber` varchar(50) NOT NULL,
   `city` varchar(100) DEFAULT NULL,
   `street` varchar(100) DEFAULT NULL,
   `housenumber` varchar(11) NOT NULL,
   `postalcode` varchar(100) NOT NULL,
-  `loginID` int(11) NOT NULL
+  `userID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `signup`
 --
 
-INSERT INTO `signup` (`salutation`, `firstname`, `fastname`, `email`, `userpass`, `phonenumber`, `city`, `street`, `housenumber`, `postalcode`, `loginID`) VALUES
-('Dhr', 'Jelle', 'Wolf', 'jellewolf3@gmail.com', 'test', '06354354345', 'Den Hoorn', 'Zouteland', '9', '1797BA', 23),
-('Dhr', 'Jelle', 'Wolf', 'jellewolf3@gmail.com', 'test', '06354354345', 'Den Hoorn', 'Zouteland', '9', '1797BA', 24),
-('Dhr', 'Jelle', 'Wolf', 'jellewolf3@gmail.com', 'test4', '0615240373', 'Den Hoorn', 'Zouteland', 'Zouteland', '1797BA', 25),
-('aanhef hier', 'Arjan', 'Roodenburg', 'spuurmaann3@gmail.com', '110011', '110011', 'ANNA PAULOWNA', 'STATIONSWEG', 'STATIONSWEG', '1761EB', 26),
-('', 'Arjan', 'Roodenburg', 'spuurmaann3@gmail.com', '110011', '110011', 'ANNA PAULOWNA', 'STATIONSWEG', 'STATIONSWEG', '1761EB', 27),
-('', '', '', '', '', '', '', '', '', '', 28),
-('', '', '', '', '', '', '', '', '', '', 29);
+INSERT INTO `signup` (`salutation`, `useruid`, `lastname`, `email`, `userpass`, `city`, `street`, `housenumber`, `postalcode`, `userID`) VALUES
+('Dhr', 'Jelle', 'de Wolf', 'jellewolf3@gmail.com', '$2y$10$hG4GDXnnOABFE', '123', 'Den Hoorn', 'Zouteland', '9', 1),
+('Dhr', 'Jan', 'gekke man', 'jan@gmail.com', '$2y$10$Znp0bimxAanTC', '1234', 'appelstraat', 'appel1', '10', 2),
+('Dhr', 'gekkie', 'aap', 'aap@gmail.com', '$2y$10$XQQx8bzs.jJXM', 'lollol', 'dwadwadwa', 'dawdwad', 'wadwadwa', 3),
+('Dhr', 'Jelle', 'klaas', 'yolo@gmail.com', '$2y$10$rI2bcj1JdKgjX', '123456', 'okkk', 'kikiki', '9', 4),
+('Dhr', 'Jaap', 'dawd', 'jaap@gmail.com', '$2y$10$s0xTNyPOxXRLv', 'hoi', 'gdrgrdg', 'drgrdgrdg', '9', 5);
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -156,7 +153,7 @@ ALTER TABLE `news`
 -- Indexen voor tabel `signup`
 --
 ALTER TABLE `signup`
-  ADD PRIMARY KEY (`loginID`);
+  ADD PRIMARY KEY (`userID`);
 
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
@@ -184,7 +181,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT voor een tabel `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `loginID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
