@@ -94,30 +94,12 @@ a:active {
     text-decoration: none;
 }
 
-.footermain p {
-    background-color: #414141;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: auto;
-    width: 100%;
-}
 
-.footerleft {
-    float: left;
-    text-align: center;
-    max-width: 50%;
-    color: white;
-    font-size: 15px;
-}
-
-.footerright {
-    float: right;
-    text-align: center;
-    max-width: 50%;
-    color: white;
-    font-size: 15px;
-}
 .signup1 {
     color: cyan;
+    text-align: center;
+}
+.passreset {
+    color: white;
     text-align: center;
 }

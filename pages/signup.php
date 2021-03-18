@@ -10,6 +10,8 @@
 <link >
 </head>
 <body>
+<div class="container">
+		<div class="maincontainer">
 <?php
 include '../inc/menu.inc.php';
 ?>
@@ -21,6 +23,8 @@ include '../inc/menu.inc.php';
  <input class="logform" type="text" name="salutation" placeholder="Aanhef" required>
  <br>
  <input class="logform" type="text" name="uid" placeholder="Gebruikers naam">
+ <br>
+ <input class="logform" type="text" name="firstname" placeholder="Voornaam">
  <br>
  <input class="logform" type="text" name="lastname" placeholder="Achternaam">
  <br>
@@ -62,22 +66,16 @@ if (isset($_GET["error"])) {
         echo "<p>Gebruikers naam al in gebruik</p>";
     }
     else if ($_GET["error"] =="none") {
-        echo "<p>Je bent gerigristreerd </p>";
+        echo "<p>Je bent gerigistreerd </p>";
     }
 }
 ?>
 </section>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-<?php
-include '../inc/footer.inc.php'
-?>
+</div>
+</div>
+ <footer class="footer">
+	<p class="footleft">Beheer</p>
+	<p class="footright">Copyright</p>
+</footer>
 </body>
 </html>

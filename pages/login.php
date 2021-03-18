@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
+<div class="container">
+		<div class="maincontainer">
 <div class="incmain">
 <?php
 include '../inc/menu.inc.php';
@@ -18,7 +20,7 @@ include '../inc/menu.inc.php';
 <form action="/inc/login.inc.php" method="post">
  <input class="logform" type="text" name="uid" placeholder="Gebruikersnaam">
  <br>
- <input class="logform" type="password" name="pwd" placeholder="Wachtwoord">
+ <input class="logform" type="password" name="pwd" placeholder="Wachtwoord/Email">
  <br>
  <button class="logbutton" type="submit" name="submit">Inloggen</button> 
 <button class="signbutton" type="link" name="signup"><a href="/pages/signup.php">Registreren</a></button>
@@ -34,19 +36,11 @@ if (isset($_GET["error"])) {
     }
 }
 ?>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <?php
-include '../inc/footer.inc.php'
-?>
+</div>
+</div>
+ <footer class="footer">
+	<p class="footleft">Beheer</p>
+	<p class="footright">Copyright</p>
+</footer>
 </body>
 </html>

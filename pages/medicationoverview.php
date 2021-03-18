@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="/css/service.css">
 </head>
 <body>
+<div class="container">
+		<div class="maincontainer">
 <div>
 	<?php
 	include '../inc/menu.inc.php';
@@ -20,8 +22,11 @@ Kleine opsomming van medicijnen van A tot Z.
 <?php
 	include '../inc/med.inc.php';
 ?>
-<?php
-	include '../inc/footer.inc.php';
-?>
+</div>
+</div>
+ <footer class="footer">
+	<p class="footleft">Beheer</p>
+	<p class="footright">Copyright</p>
+</footer>
 </body>
 </html>

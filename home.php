@@ -9,8 +9,9 @@
 	<link rel="stylesheet" href="/css/menu.inc.css">
 	<link rel="stylesheet" href="/css/home.css">
 </head>
-
 <body>
+	<div class="container">
+		<div class="maincontainer">
 	<div>
 		<?php
 		include 'inc/menu.inc.php';
@@ -56,16 +57,17 @@
 			<p>info@apotheekschagen.nl</p>
 		</div>
 	</div>
-	<div class="newsdiv">
+<div class="newsdiv">
 		<?php
 		include 'inc/news.inc.php';
 		?>
+</div>
 	</div>
-	<div>
-		<?php
-		include 'inc/footer.inc.php';
-		?>
-	</div>
+</div>
+<footer class="footer">
+	<p class="footleft">Beheer</p>
+	<p class="footright">Copyright</p>
+</footer>
 </body>
 
 </html>

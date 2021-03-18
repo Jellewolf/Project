@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="/css/news.css">
 </head>
 <body>
+<div class="container">
+		<div class="maincontainer">
 <div>
 <?php
 include '../inc/menu.inc.php';
@@ -40,8 +42,11 @@ include '../inc/menu.inc.php';
 <div class="contactform">
 <a href="/pages/contact.php">Als u contact met ons op wilt nemen klik dan hier</a>
 </div>
-<?php
-include '../inc/footer.inc.php'
-?>
+</div>
+</div>
+<footer class="footer">
+	<p class="footleft">Beheer</p>
+	<p class="footright">Copyright</p>
+</footer>
 </body>
 </html>

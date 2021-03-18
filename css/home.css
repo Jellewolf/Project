@@ -1,20 +1,13 @@
-body {
-    background-color: #333333;
-    font-family: 'loraregular';
-}
-
 h2 {
     color: white;
     font-size: 20px;
 }
-
 
 /* following css is only for slideshow*/
 
 * {
     box-sizing: border-box
 }
-
 
 /* Slideshow container */
 
@@ -27,14 +20,12 @@ h2 {
     float: left;
 }
 
-
 /* On hover, add a black background color with a little bit see-through */
 
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 /* Fading animation */
 
@@ -196,30 +187,6 @@ a:active {
     height: 485px;
 }
 
-.footermain p {
-    background-color: #414141;
-    width: 100%;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin: auto;
-}
-
-.footerleft {
-    float: left;
-    text-align: center;
-    max-width: 50%;
-    color: white;
-    font-size: 15px;
-}
-
-.footerright {
-    float: right;
-    text-align: center;
-    max-width: 50%;
-    color: white;
-    font-size: 15px;
-}
-
 .slide {
     width: 50%;
     float: left;
@@ -244,3 +211,4 @@ a:active {
     height: 300px;
     width: 580px;
 }
+

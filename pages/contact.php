@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="/css/service.css">
 </head>
 <body>
+<div class="container">
+		<div class="maincontainer">
 <?php
 include '../inc/menu.inc.php';
 ?>
@@ -40,8 +42,11 @@ if (isset($_GET["bericht"])) {
     }
 }
 ?>
-<?php
-include '../inc/footer.inc.php'
-?>
+</div>
+</div>
+<footer class="footer">
+	<p class="footleft">Beheer</p>
+	<p class="footright">Copyright</p>
+</footer>
 </body>
 </html>

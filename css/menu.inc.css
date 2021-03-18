@@ -4,7 +4,50 @@
     font-weight: normal;
     font-style: normal;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 
+html, body {
+    background-color: #333333;
+    font-family: 'loraregular';
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.maincontainer {
+    overflow: auto;
+    padding-bottom:100px;
+}
+
+.footer {
+    background-color: #414141;
+    position: relative;
+    height: 75px;
+    margin-top: -75px;
+    clear: both;
+}
+p.footleft {
+    float: left;
+    width: 50%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+p.footright {
+    float: right;
+    width: 50%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
 ul {
     list-style-type: none;
     text-align: center;

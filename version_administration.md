@@ -35,4 +35,5 @@ V1.3/Milan/16-02-2021/added pages file and changed code./
 V1.4/Jelle/21-02-2021/Fixed divs added footer and changed around classes/fixed them./
 V1.5/Jelle, Arjan/01-03-2021/Added styling for login, service, news articles and signup./
 V1.5.1/Arjan/01-03-2021/Fixed bugs (unclosed syntax, general overlooked mistakes) and put text on service.php and information.php ./
-V1.6/Milan/04-02-2021/Fixed bugs, added iframe, changed image./
+V1.6/Milan/04-03-2021/Fixed bugs, added iframe, changed image./
+V1.7/Jelle/18-03-2021/Added working login, Fixed footer, Added final database version./

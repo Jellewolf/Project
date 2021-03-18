@@ -23,6 +23,8 @@ $title = $row['newsname'];
     <link rel="stylesheet" href="/css/news.css">
 </head>
 <body>
+<div class="container">
+		<div class="maincontainer">
 <div>
     <?php
     include '../inc/menu.inc.php';
@@ -34,11 +36,12 @@ $title = $row['newsname'];
 
 ?>
 </div>
-<div>
-<?php
-include '../inc/footer.inc.php'
-?>
 </div>
+</div>
+<footer class="footer">
+	<p class="footleft">Beheer</p>
+	<p class="footright">Copyright</p>
+</footer>
 </body>
 </html>
 

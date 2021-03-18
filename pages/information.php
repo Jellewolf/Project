@@ -11,6 +11,8 @@
 </head>
 
 <body>
+<div class="container">
+		<div class="maincontainer">
 	<div>
 		<?php
 		include '../inc/menu.inc.php';
@@ -25,12 +27,11 @@
 		(Maak hier een klein overzicht van informatie over aandoeningen.
 		In verdeling van A tm Z)
 	</div>
-<br>
-<br>
-<br>
-<br>
-<?php
-include '../inc/footer.inc.php'
-?>
+</div>
+</div>
+<footer class="footer">
+	<p class="footleft">Beheer</p>
+	<p class="footright">Copyright</p>
+</footer>
 </body>
 </html>

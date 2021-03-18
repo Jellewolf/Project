@@ -9,7 +9,7 @@ include_once 'dbh.inc.php';
 if ($resultcheck > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<div class='news'>
-        <a href='pages/news1.php?ID=".$row['newsID']."'><img src='/images/".$row['newsimages']."'>"."<br />" . $row['newsarticle']."</a></div>";
+        <a href='pages/newsdetail.php?ID=".$row['newsID']."'><img src='/images/".$row['newsimages']."'>"."<br />" . $row['newsarticle']."</a></div>";
     }
 }
 ?>

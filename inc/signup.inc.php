@@ -4,6 +4,7 @@ if(isset($_POST["submit"])){
 
     $salutation = $_POST['salutation'];
     $useruid = $_POST['uid'];
+    $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
     $userpass = $_POST['pwd'];
@@ -16,7 +17,7 @@ if(isset($_POST["submit"])){
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
-    if (emptyInputSignup($salutation, $useruid, $lastname, $email, $userpass, $userpassrepeat, $city, $street, $housenumber, $postalcode )!==false) {
+    if (emptyInputSignup($salutation, $useruid, $firstname, $lastname, $email, $userpass, $userpassrepeat, $city, $street, $housenumber, $postalcode )!==false) {
         header("location: ../pages/signup.php?error=emptyinput");
         exit();  
     }
@@ -37,7 +38,7 @@ if(isset($_POST["submit"])){
         exit();  
     }
 
-    createUser($conn, $salutation,  $useruid, $lastname, $email, $userpass, $userpassrepeat, $city, $street, $housenumber, $postalcode);
+    createUser($conn, $salutation,  $useruid, $firstname, $lastname, $email, $userpass, $city, $street, $housenumber, $postalcode);
     
 
 }

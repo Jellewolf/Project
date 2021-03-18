@@ -1,9 +1,9 @@
 <?php
 
-function emptyInputSignup($salutation, $useruid, $lastname, $email, $userpass, $userpassrepeat, $city, $street, $housenumber, $postalcode ) {
+function emptyInputSignup($salutation, $useruid, $firstname, $lastname, $email, $userpass, $userpassrepeat, $city, $street, $housenumber, $postalcode ) {
  $result;
  if (empty($useruid)|| empty ($email)|| empty($userpass)) {
-     $result = true;
+     $result = true; 
  }
  else {
      $result = false;
@@ -63,8 +63,8 @@ function invalidfirstname($useruid) {
     }
     mysqli_stmt_close($stmt);
    }
-   function createUser($conn, $salutation,  $useruid, $lastname, $email, $userpass, $city, $street, $housenumber, $postalcode) {
-    $sql = "INSERT INTO signup (salutation, useruid, lastname, email, userpass, city, street, housenumber, postalcode) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?);";
+   function createUser($conn, $salutation,  $useruid, $firstname, $lastname, $email, $userpass, $city, $street, $housenumber, $postalcode) {
+    $sql = "INSERT INTO signup (salutation, useruid, firstname, lastname, email, userpass, city, street, housenumber, postalcode) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../pages/signup.php?error=stmtfailed");
@@ -73,7 +73,7 @@ function invalidfirstname($useruid) {
 
     $hashedpwd = password_hash($userpass, PASSWORD_DEFAULT);
     
-    mysqli_stmt_bind_param($stmt, "sssssssss",$salutation, $useruid, $lastname, $email, $hashedpwd,  $city, $street, $housenumber, $postalcode);
+    mysqli_stmt_bind_param($stmt, "ssssssssss",$salutation, $useruid, $firstname, $lastname, $email, $hashedpwd,  $city, $street, $housenumber, $postalcode);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../pages/signup.php?error=none");
