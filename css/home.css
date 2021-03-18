@@ -112,6 +112,7 @@ a:active {
 }
 
 .hometext {
+    padding-top: 15px;
     display: block;
     float: left;
     width: 35%;
@@ -124,6 +125,7 @@ a:active {
 }
 
 .address {
+    padding-top: 15px;
     float: right;
     width: 35%;
     height: 300px;
