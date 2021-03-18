@@ -34,6 +34,13 @@ include '../inc/menu.inc.php';
 </form>
 </div>
 <?php
+if (isset($_GET["bericht"])) {
+    if($_GET["bericht"] =="verstuurd") {
+        echo "<p class='messagesend'>Uw bericht is ontvangen!</p>";
+    }
+}
+?>
+<?php
 include '../inc/footer.inc.php'
 ?>
 </body>
