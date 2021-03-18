@@ -15,17 +15,25 @@ include '../inc/menu.inc.php';
 ?>
 </div>
 <div class="logbox">
-<form>
- <input class="logform" type="text" name="e-mail" placeholder="E-mail">
+<form action="/inc/login.inc.php" method="post">
+ <input class="logform" type="text" name="uid" placeholder="Gebruikersnaam">
  <br>
- <input class="logform" type="text" name="username" placeholder="Gebruikersnaam">
- <br>
- <input class="logform" type="text" name="password" placeholder="Wachtwoord">
+ <input class="logform" type="password" name="pwd" placeholder="Wachtwoord">
  <br>
  <button class="logbutton" type="submit" name="submit">Inloggen</button> 
-<button class="signbutton" type="link" name="signup"><a href="signup.php">Registreren</a></button>
+<button class="signbutton" type="link" name="signup"><a href="/pages/signup.php">Registreren</a></button>
  <button class="resbutton" type="link" name="reset"><a href="passreset.php">Wachtwoord vergeten?</a></button>
  </div>
+ <?php
+if (isset($_GET["error"])) {
+    if($_GET["error"] =="emptyinput") {
+        echo "<p>Zorg ervoor dat alle velden zijn ingevuld!</p>";
+    }
+    else if ($_GET["error"] =="wrongLogin") {
+        echo "<p>Verkeerde inlog gegevens!</p>";
+    }
+}
+?>
  <br>
  <br>
  <br>
