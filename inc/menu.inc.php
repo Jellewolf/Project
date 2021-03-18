@@ -20,7 +20,7 @@ session_start();
 					<li class="<?php active('information.php');?>"><a href="/pages/information.php">Voorlichting</a></li>
 					<?php
 					if (isset($_SESSION["useruid"])) {
-						echo "<li><a href='/pages/home.php'>Log out</a></li>";
+						echo "<li><a href='/home.php'>Log out</a></li>";
 					}
 					else {
 						echo "<li><a href='/pages/login.php'>Login</a></li>";
