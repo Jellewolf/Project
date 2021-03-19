@@ -37,3 +37,4 @@ V1.5/Jelle, Arjan/01-03-2021/Added styling for login, service, news articles and
 V1.5.1/Arjan/01-03-2021/Fixed bugs (unclosed syntax, general overlooked mistakes) and put text on service.php and information.php ./
 V1.6/Milan/04-03-2021/Fixed bugs, added iframe, changed image./
 V1.7/Jelle/18-03-2021/Added working login, Fixed footer, Added final database version./
+V1.8/Jelle, Milan/19-03-2021/Cleaned up all the code and added comments where needed./

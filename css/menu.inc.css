@@ -1,17 +1,24 @@
+/*this class is for the custom font only.*/
+
 @font-face {
-    font-family: 'loraregular';
-    src: url('/fonts/lora-variablefont_wght-webfont.woff2') format('woff2'), url('/fonts/lora-variablefont_wght-webfont.woff') format('woff');
+    font-family: "loraregular";
+    src: url("/fonts/lora-variablefont_wght-webfont.woff2") format("woff2"), url("/fonts/lora-variablefont_wght-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
+
+
+/* classes underneath are for giving the correct width and height of the page, So that the footer is always displayed at the bottom. */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-html, body {
+html,
+body {
     background-color: #333333;
-    font-family: 'loraregular';
+    font-family: "loraregular";
     height: 100%;
 }
 
@@ -21,7 +28,7 @@ html, body {
 
 .maincontainer {
     overflow: auto;
-    padding-bottom:100px;
+    padding-bottom: 100px;
 }
 
 .footer {
@@ -31,6 +38,7 @@ html, body {
     margin-top: -75px;
     clear: both;
 }
+
 p.footleft {
     float: left;
     width: 50%;
@@ -48,6 +56,10 @@ p.footright {
     text-align: center;
     margin-top: 25px;
 }
+
+
+/*These classes are for the navbar styling. */
+
 ul {
     list-style-type: none;
     text-align: center;
@@ -91,18 +103,16 @@ a {
     text-decoration: none;
 }
 
-.textblock {
-    display: block;
-    float: left;
-    padding: 10px;
-    margin-right: 30px;
-    text-decoration: none;
-}
+
+/*logo image.*/
 
 .logo img {
     width: 10%;
     height: 10%;
 }
+
+
+/*class for logo text*/
 
 .banner {
     float: right;
@@ -112,6 +122,9 @@ a {
     color: white;
     font-style: bold;
 }
+
+
+/*this class shows what page your currently are*/
 
 .activepage {
     background-color: rgb(85, 85, 85);
